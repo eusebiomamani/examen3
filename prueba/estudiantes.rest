@@ -1,0 +1,40 @@
+GET http://127.0.0.1:5000/partidos
+
+###
+GET http://127.0.0.1:5000/partidos/:2
+
+
+
+###
+POST http://127.0.0.1:5000/partidos
+Accept: application/json
+Content-Type: application/json
+
+{
+"ci_e": 2000,
+"nombre_e": "barcelona",
+"apell_pat_e": "perez",
+"apell_mat_e": "mendez"
+
+}
+
+
+###
+PUT http://127.0.0.1:5000/partidos/:2
+Accept: application/json
+Content-Type: application/json
+
+{
+"nombre_e": "ca",
+"apell_pat_e": "perez",
+"apell_mat_e": "mendez"
+
+}
+
+###
+DELETE  http://127.0.0.1:5000/partidos/:2
+
+###
+GET https://testinf530.000webhostapp.com/estudiantes2023
+Accept: application/json
+Content-Type: application/json
